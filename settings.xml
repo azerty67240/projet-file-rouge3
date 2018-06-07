@@ -1,13 +1,15 @@
-<settings>
-  <!-- the path to the local repository - defaults to ~/.m2/repository
-  -->
-  <!-- <localRepository>/path/to/local/repo</localRepository>
-  -->
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  
     <mirrors>
     <mirror> <!--Send all requests to the public group -->
       <id>nexus</id>
       <mirrorOf>*</mirrorOf>
-      <url>http://192.168.33.10:8082/repository/maven-public</url>
+       <url>http://192.168.33.10:8082/repository/maven-public</url>
     </mirror>
   </mirrors>
   <activeProfiles>
@@ -58,4 +60,3 @@
     </server>
   </servers>
 </settings>
-
